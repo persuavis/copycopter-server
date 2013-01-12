@@ -45,7 +45,7 @@ Feature: publish a blurb
     And a visible element should contain "Draft"
     And I should see "New blurb" in the editor
     And the "Draft" checkbox should be checked
-    And no visible elements should contain "This is published"
+    And a visible element should contain "This is published"
     When I follow "latest published version"
     Then a visible element should contain "This is published"
 
